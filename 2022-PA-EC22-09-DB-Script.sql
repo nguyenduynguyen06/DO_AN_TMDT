@@ -8,6 +8,9 @@ CREATE TABLE catergory (
   catergoryname varchar(50) NOT NULL,
   PRIMARY KEY (Id)
 ) ;
+insert into catergory (Id,catergoryname)
+values 
+(1,'Omega'),(2,'Rolex'),(3,'Tissot'),(4,'Fossil'),(5,'Seiko'),(6,'TAG Heuer'),(7,'Citizen');
 CREATE TABLE product (
   Id int NOT NULL,
   ProductName varchar(50) NOT NULL,
@@ -44,6 +47,10 @@ CREATE TABLE users (
   isAdmin bit NOT NULL,
   PRIMARY KEY (Email)
 );
+insert into users(Email,PassWord,FullName,Numberphone,Address,Sex,Rating,isAdmin)
+values 
+('admin@admin.com','123456','Admin','1234567','Thu Duc',1,100,1),
+('duynguyen@gmail.com','123','nguyenduynguyen','12345678','Thu Duc',1,100,0);
 CREATE TABLE  trans (
    Id int NOT NULL,
    IdProduct int NOT NULL,
